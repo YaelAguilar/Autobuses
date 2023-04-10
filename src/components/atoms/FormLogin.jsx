@@ -5,15 +5,16 @@ import { useRef } from 'react';
 
 function FormLogin() {
     
-    const formA = useRef()
-    const navigate = useNavigate()
+    const formA = useRef();
+    const navigate = useNavigate();
 
     const handlerClick = (e) =>{
 
-        const formLogin = new FormData(formA.current)
+        const formLogin = new FormData(formA.current);
         
         let uri = 'http://34.225.239.102/api/iniciar';
         let options={
+            
             method: 'POST',
             headers:{"Content-Type": 'application/json'},
             body: JSON.stringify({
