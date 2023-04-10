@@ -3,13 +3,14 @@ import { useNavigate } from "react-router-dom";
 
 function FormRegister() {
 
-    const FormR = useRef()
-    const navigate = useNavigate()
+    const FormR = useRef();
+    const navigate = useNavigate();
 
     const handlerClick = (e) =>{
 
         e.preventDefault()
-        const formRegister = new FormData(FormR.current)
+        const formRegister = new FormData(FormR.current);
+        
         let uri = 'http://34.225.239.102/api/registrar/usuario';
         let options = {
 
