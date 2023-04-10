@@ -5,12 +5,12 @@ import { useRef } from 'react';
 
 function FormLogin() {
     
-    const form = useRef()
+    const formA = useRef()
     const navigate = useNavigate()
 
     const handlerClick = (e) =>{
 
-        const formLogin = new FormData(form.current)
+        const formLogin = new FormData(formA.current)
         
         let uri = 'http://34.225.239.102/api/iniciar';
         let options={
@@ -22,6 +22,7 @@ function FormLogin() {
                 contrasenia: formLogin.get('password')
             })
         }
+
         fetch(uri, options)
         .then(response=>response.json())
         .then(data=>alert(JSON.stringify(data)))
@@ -30,13 +31,13 @@ function FormLogin() {
 
     return(
 
-        <form className="form-login" ref={form}>
+        <form className="form-login" ref={formA}>
             
-            <img src={logo} alt="Logo" className="img-login"/>
+            <img src={logo} alt="Logo" className="img-logo"/>
                                                             
                 <p>Username</p>
 
-            <input type="text"className="input-username" name='username' placeholder="Ingrese su nombre de usuario"/>           
+            <input type="text" className="input-username" name='username' placeholder="Ingrese su nombre de usuario"/>           
 
                 <p>Password</p>
 
@@ -49,4 +50,6 @@ function FormLogin() {
 
     )
 }
+
+export default FormLogin;
 
