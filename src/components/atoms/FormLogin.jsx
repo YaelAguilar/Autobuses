@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 import logo from "../../assets/img/transformers-autobot.svg";
+import "../../assets/style/formlogin.css";
 
 function FormLogin() {
     
