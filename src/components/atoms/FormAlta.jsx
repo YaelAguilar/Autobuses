@@ -58,10 +58,6 @@ function FormAlta() {
 
             <input className="input-fecha-alta" type="date" name='fecha'/>   
 
-                <p>Clave autobus</p>
-
-            <input className="input-clave-alta" type="text" name='clave' placeholder="Ingrese la clave del autobus"/>  
-
                 <p>Tipo</p> 
 
             <select className="input-tipo-alta" name="tipo">
