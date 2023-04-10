@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useState } from "react";
+import logo from "../../assets/img/transformers-autobot.svg";
 
 function FormAlta() {
 
@@ -77,7 +78,7 @@ function FormAlta() {
             <button className="button-licencia-alta" type="button" onClick={handlerClickRandom}>Generar licencia</button>
 
             <button className="button-alta-alta" type="button" onClick={handlerClick}>Alta de autobus</button>
-            
+
         </form>
 
     )

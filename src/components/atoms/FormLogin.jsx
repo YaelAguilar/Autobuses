@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
-
+import logo from "../../assets/img/transformers-autobot.svg";
 
 function FormLogin() {
     
@@ -14,7 +14,7 @@ function FormLogin() {
         
         let uri = 'http://34.225.239.102/api/iniciar';
         let options={
-            
+
             method: 'POST',
             headers:{"Content-Type": 'application/json'},
             body: JSON.stringify({
@@ -34,7 +34,7 @@ function FormLogin() {
 
         <form className="form-login" ref={formA}>
             
-            <img src={logo} alt="Logo" className="img-logo"/>
+            <img className="img-logo" src={logo} alt="Logo"/>
                                                             
                 <p>Username</p>
 

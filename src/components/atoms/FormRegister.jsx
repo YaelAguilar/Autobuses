@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/img/transformers-autobot.svg";
 
 function FormRegister() {
 
@@ -34,7 +35,7 @@ function FormRegister() {
     return(
         <form className="form-register" ref={FormR}>
 
-            <img src={Logo} alt="Logotipo" className="img-logo"/>
+            <img className="img-logo" src={logo} alt="Logotipo"/>
 
                 <p>Name</p>
 
