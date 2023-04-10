@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import "../../assets/style/formregister.css";
 import logo from "../../assets/img/transformers-autobot.svg";
 
 function FormRegister() {
