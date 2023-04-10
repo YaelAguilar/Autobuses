@@ -74,7 +74,7 @@ function FormAlta() {
 
                 <p>Número de licencia</p>
 
-            <input className="input-licencia-alta" type="number" value={numero} name="licencia"/>                
+            <input className="input-licencia-alta" type="number" placeholder="Ingrese licencia" value={numero} name="licencia"/>                
             <button className="button-licencia-alta" type="button" onClick={handlerClickRandom}>Generar licencia</button>
 
             <button className="button-alta-alta" type="button" onClick={handlerClick}>Alta de autobus</button>
