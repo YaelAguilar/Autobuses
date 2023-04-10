@@ -1,10 +1,12 @@
-
+import FormAlta from "../components/atoms/FormAlta";
 
 function Alta() {
 
     return(
 
-        <h1>Alta</h1>
+        <>
+            <FormAlta/>
+        </>
     )
 }
 

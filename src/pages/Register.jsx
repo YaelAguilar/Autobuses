@@ -1,10 +1,12 @@
-
+import FormRegister from "../components/atoms/FormRegister";
 
 function Register() {
 
     return(
 
-        <h1>Register</h1>
+        <>
+            <FormRegister/>
+        </>
     )
 }
 
